@@ -1,13 +1,13 @@
 import type { Technology } from "../types/technology";
 
 export const fetchTechnologies = async (): Promise<Technology[]> => {
-  const response = await fetch("/public/data.json");
+  const response = await fetch(
+    `${import.meta.env.BASE_URL}data.json`
+  );
 
   if (!response.ok) {
-    throw new Error("Failed to fetch technologies");
+    throw new Error("Failed to load technologies");
   }
 
-  const data: Technology[] = await response.json();
-
-  return data;
+  return response.json();
 };

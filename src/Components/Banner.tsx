@@ -33,7 +33,7 @@ const Banner = () => {
         {/* Right Image */}
         <div className="hidden shrink-0 lg:block">
           <img
-            src="/public/banner-stack.png"
+            src="/banner-stack.png"
             alt="Technology Stack"
             className="h-[380px] w-[380px] object-contain"
           />
