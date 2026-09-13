@@ -33,6 +33,7 @@ const TechnologyCard = ({
   isSelected,
   onAdd,
 }: TechnologyCardProps) => {
+    
   return (
     <div className="group rounded-xl border border-slate-200 bg-white p-3 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
       
