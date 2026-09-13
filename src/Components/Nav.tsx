@@ -1,5 +1,3 @@
-import React from "react";
-
 const Nav = () => {
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-100 bg-white">
