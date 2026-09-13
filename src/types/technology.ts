@@ -1,4 +1,4 @@
-type Category =
+export type Category =
   | "Frontend"
   | "Backend"
   | "Database"
@@ -7,15 +7,18 @@ type Category =
   | "DevOps"
   | "Tools";
 
-type Difficulty = "Beginner-Friendly" | "Intermediate" | "Advanced";
+export type Difficulty =
+  | "Beginner-Friendly"
+  | "Intermediate"
+  | "Advanced";
 
-export interface Itechnology {
+export interface Technology {
   id: string;
   name: string;
   category: Category;
   description: string;
-  icon: string;
-  rating: number;
   difficulty: Difficulty;
-  badge: string;
+  rating: number;
+  tag: string;
+  icon: string;
 }
